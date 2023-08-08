@@ -1,24 +1,25 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Here you have a small app to consume in heroku
 
 Things you may want to cover:
 
 * Ruby version
+ - 3.2.2
 
 * System dependencies
+ - Faker 3.2.0 (https://rubygems.org/gems/faker/versions/3.2.0)
 
-* Configuration
+* Database is made with PostgreSQL, to replicate the schema use this command in Linux CLI (remember you must install postgreSQL to use) 
 
-* Database creation
+```bash
+rails db:create db:migrate db:seed
+```
 
-* Database initialization
+* How to run the project use the following command
 
-* How to run the test suite
+```bash
+rails s
+```
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Deployment has failed in Heroku because i have problems with payment method D:
